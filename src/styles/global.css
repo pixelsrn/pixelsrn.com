@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+    /* CRT — the phosphor lifts the black toward green even in the dark areas. */
+    --color-void: #080b09;
+    --color-panel: #0d1310;
+    --color-rule: #1c2a22;
+    --color-rule-bright: #2c4237;
+
+    /* Phosphor green, used for emphasis only. */
+    --color-phosphor: #3ef88f;
+    --color-text: #9dbca9;
+    --color-text-dim: #7c9e87;
+
+    /* LCD subpixel triad. The logo is built from these. */
+    --color-sub-r: #ff4b3e;
+    --color-sub-g: #3ef88f;
+    --color-sub-b: #4b8bff;
+
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+    --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--color-void);
+}
+
+body {
+    /* Slight bloom behind the content */
+    background:
+        radial-gradient(
+            ellipse 90% 70% at 50% 38%,
+            #101a14 0%,
+            var(--color-void) 72%
+        ),
+        var(--color-void);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Scanlines. Deliberately near-threshold */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.18) 0 1px,
+        transparent 1px 3px
+    );
+}
+
+.label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-dim);
+}
+
+/* Phosphor bloom. Only the headline and the mark get this. */
+.glow {
+    text-shadow:
+        0 0 1px rgba(62, 248, 143, 0.5),
+        0 0 18px rgba(62, 248, 143, 0.22);
+}
+
+:where(a, button):focus-visible {
+    outline: 2px solid var(--color-phosphor);
+    outline-offset: 3px;
+}
+
+::selection {
+    background: var(--color-phosphor);
+    color: var(--color-void);
+}

@@ -1,0 +1,18 @@
+# Every pull request automatically requests review from the owners listed
+# here. Entries are GitHub usernames (@ecjonson) or teams (@PixelsRN/founders).
+#
+# An owner must have write access to this repository, otherwise GitHub
+# silently ignores the line — no error, no review request.
+#
+# Later patterns win over earlier ones, so put the broad rule first.
+
+# Default owners for everything in the repo.
+*                       @ecjonson
+
+# Deploy config and CI: CTO reviews these regardless of who else is on the PR.
+/wrangler.jsonc         @ecjonson
+/.github/               @ecjonson
+/package.json           @ecjonson
+
+# Copy and content changes: route to whoever owns messaging.
+/src/config.ts          @ecjonson

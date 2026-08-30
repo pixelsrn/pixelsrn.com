@@ -1,0 +1,17 @@
+---
+interface Props {
+    class?: string;
+}
+const { class: className = "size-5" } = Astro.props;
+---
+
+<svg
+    viewBox="0 0 24 24"
+    class={className}
+    aria-hidden="true"
+    style="filter: drop-shadow(0 0 6px rgba(62,248,143,0.35))"
+>
+    <rect x="2" y="4" width="5" height="14" fill="var(--color-sub-r)"></rect>
+    <rect x="9.5" y="1" width="5" height="20" fill="var(--color-sub-g)"></rect>
+    <rect x="17" y="4" width="5" height="14" fill="var(--color-sub-b)"></rect>
+</svg>
