@@ -6,7 +6,8 @@ export const SITE = {
     legalName: "PixelsRN, Inc.",
     location: "Raleigh, NC",
     email: "hello@pixelsrn.com",
-    description: "PixelsRN is a new hardware company in Raleigh, North Carolina.",
+    description:
+        "PixelsRN is a new hardware company in Raleigh, North Carolina.",
 };
 
 /**
@@ -31,7 +32,10 @@ export const TEAM = [
                 label: "VX Lab",
                 href: "https://vxlab.csc.ncsu.edu/",
             },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/benjaminallenwatson/" },
+            {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/benjaminallenwatson/",
+            },
         ],
     },
     {
@@ -42,7 +46,10 @@ export const TEAM = [
                 label: "Scholar",
                 href: "https://scholar.google.com/citations?user=rtWWklQAAAAJ",
             },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/aaron-fulmer/" },
+            {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/aaron-fulmer/",
+            },
         ],
     },
     {
@@ -53,7 +60,10 @@ export const TEAM = [
                 label: "Portfolio",
                 href: "https://www.evanjonson.com/",
             },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/evan-jonson/" },
+            {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/evan-jonson/",
+            },
         ],
     },
 ];
