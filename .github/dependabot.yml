@@ -9,6 +9,11 @@ updates:
       # One PR per week for routine bumps instead of a dozen.
       minor-and-patch:
         update-types: [minor, patch]
+    ignore:
+      # TypeScript majors land ahead of Astro's tooling support. Re-check
+      # when @astrojs/check declares compatibility, then remove this.
+      - dependency-name: typescript
+        update-types: [version-update:semver-major]
 
   - package-ecosystem: github-actions
     directory: /
