@@ -1,0 +1,5 @@
+# Build output
+dist/
+.astro/
+.wrangler/
+package-lock.json

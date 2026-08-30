@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+ 
+# Uncomment once there are enough pages to warrant a sitemap.
+# Run `npx astro add sitemap`, which generates it at exactly this path.
+# Sitemap: https://pixelsrn.com/sitemap-index.xml
