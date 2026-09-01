@@ -45,18 +45,12 @@ const ogImage = new URL("/og.png", Astro.site);
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap"
         />
 
-        {
-            /* Cloudflare Web Analytics — paste your token and uncomment.
-            Cookieless, so no consent banner is required. */
-        }
-        {
-            /*
+        <!-- Cloudflare Web Analytics -->
         <script
-            defer
-            src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
-        */
-        }
+            type='module'
+            src='https://static.cloudflareinsights.com/beacon.min.js'
+            data-cf-beacon='{"token": "8d6a246fd77d412cb6c5975bf30c694b"}'>
+        </script>
     </head>
 
     <body class="flex min-h-dvh flex-col">
