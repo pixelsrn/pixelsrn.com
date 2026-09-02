@@ -85,12 +85,6 @@ The build runs `npm run build`, then `wrangler deploy` on `main` or
 
 Free plan gives 3,000 build minutes a month. This builds in about a second.
 
-## Analytics
-
-`src/layouts/Base.astro` has a commented-out Cloudflare Web Analytics beacon.
-Paste the token from the Cloudflare dashboard and uncomment it. It's
-cookieless, so it needs no consent banner.
-
 ## Structure
 
 ```
