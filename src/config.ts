@@ -3,9 +3,13 @@
  */
 export const SITE = {
     name: "PixelsRN",
+    tagline: "Display system hardware designed for interaction.",
+    subtext: "A new company, more to come.",
     legalName: "PixelsRN, Inc.",
     location: "Raleigh, NC",
     email: "hello@pixelsrn.com",
+    disclaimer: "We read everything and reply within two business days.",
+    // more detailed description for metadata
     description:
         "PixelsRN is a new hardware company in Raleigh, North Carolina.",
 };
