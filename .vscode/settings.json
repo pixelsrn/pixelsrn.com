@@ -1,41 +1,42 @@
 {
-  // Tailwind 4 puts directives like @theme in plain CSS. This association
-  // stops VS Code's CSS engine from flagging them as unknown at-rules.
   "files.associations": {
     "*.css": "tailwindcss"
   },
-
-  // The Prettier extension only claims file types it ships with, so neither
-  // .astro nor the remapped .css above reach it by default. These globs make
-  // it claim them anyway. This is the setting that fixes .astro formatting.
-  "prettier.documentSelectors": ["**/*.astro", "**/*.css"],
-
+  "prettier.documentSelectors": [
+    "**/*.astro",
+    "**/*.css",
+    "**/*.yml",
+    "**/*.yaml"
+  ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  // The Astro extension registers its own formatter for .astro files. Naming
-  // Prettier explicitly here keeps one tool in charge.
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[tailwindcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  // VS Code ships its own formatter for JSON, YAML and Markdown, and it wins
-  // over the global editor.defaultFormatter above. Without these blocks those
-  // files get formatted by VS Code using editor.tabSize instead of by
-  // Prettier using .prettierrc.mjs.
   "[json]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[github-actions-workflow]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
@@ -44,21 +45,8 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  // Indentation comes from .prettierrc.mjs. detectIndentation must stay off
-  // or VS Code guesses per file and fights Prettier.
-  "editor.tabSize": 4,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-
-  // Use the repo's pinned Prettier, not whatever the extension bundles.
   "prettier.prettierPath": "node_modules/prettier",
-
-  // Same idea for TypeScript. VS Code ships its own copy, which is usually
-  // older than the one in package.json and can fail to resolve "extends"
-  // targets that newer TypeScript handles fine.
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-
   "files.eol": "\n"
 }
