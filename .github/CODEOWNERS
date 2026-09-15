@@ -12,6 +12,7 @@
 # Deploy config and CI: CTO reviews these regardless of who else is on the PR.
 /wrangler.jsonc         @ecjonson
 /.github/               @ecjonson
+/.vscode/               @ecjonson
 /package.json           @ecjonson
 
 # Copy and content changes: route to whoever owns messaging.

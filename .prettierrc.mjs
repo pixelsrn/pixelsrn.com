@@ -1,5 +1,5 @@
 /** @type {import("prettier").Config} */
-export default {
+const config = {
     tabWidth: 4,
     plugins: ["prettier-plugin-astro"],
     overrides: [
@@ -8,12 +8,10 @@ export default {
             options: { parser: "astro" },
         },
         {
-            files: ["*.yml", "*.yaml", "*.json", "*.jsonc"],
+            files: ["*.yml", "*.yaml", "*.json", "*.jsonc", "*.md"],
             options: { tabWidth: 2 },
-        },
-        {
-            files: "*.md",
-            options: { proseWrap: "preserve" },
         },
     ],
 };
+
+export default config;
