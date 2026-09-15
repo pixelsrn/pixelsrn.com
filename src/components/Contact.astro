@@ -9,29 +9,27 @@ interface Props {
 const { variant = "block" } = Astro.props;
 ---
 
-{
-    variant === "bar" ? (
-        <div>
-            <p class="label">Contact</p>
-            <a
-                href={`mailto:${SITE.email}`}
-                class="text-phosphor hover:decoration-phosphor/40 mt-0.5 inline-block font-mono text-base font-medium wrap-anywhere underline decoration-1 underline-offset-4 transition-colors"
-            >
-                {SITE.email}
-            </a>
-        </div>
-    ) : (
-        <section>
-            <h2 class="label">Contact</h2>
-            <a
-                href={`mailto:${SITE.email}`}
-                class="text-phosphor hover:decoration-phosphor/40 mt-2 inline-block font-mono text-lg font-medium wrap-anywhere underline decoration-2 underline-offset-6 transition-colors"
-            >
-                {SITE.email}
-            </a>
-            <p class="text-text-dim mt-2 max-w-sm text-base text-pretty">
-                We read everything and reply within two business days.
-            </p>
-        </section>
-    )
-}
+{variant === "bar" ? (
+    <div>
+        <p class="label">Contact</p>
+        <a
+            href={`mailto:${SITE.email}`}
+            class="text-phosphor hover:decoration-phosphor/40 mt-0.5 inline-block font-mono text-base font-medium wrap-anywhere underline decoration-1 underline-offset-4 transition-colors"
+        >
+            {SITE.email}
+        </a>
+    </div>
+) : (
+    <section>
+        <h2 class="label">Contact</h2>
+        <a
+            href={`mailto:${SITE.email}`}
+            class="text-phosphor hover:decoration-phosphor/40 mt-2 inline-block font-mono text-lg font-medium wrap-anywhere underline decoration-2 underline-offset-6 transition-colors"
+        >
+            {SITE.email}
+        </a>
+        <p class="text-text-dim mt-2 max-w-sm text-base text-pretty">
+            {SITE.disclaimer}
+        </p>
+    </section>
+)}

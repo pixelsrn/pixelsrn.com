@@ -52,7 +52,7 @@
   "editor.detectIndentation": false,
 
   // Use the repo's pinned Prettier, not whatever the extension bundles.
-  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.prettierPath": "node_modules/prettier",
 
   // Same idea for TypeScript. VS Code ships its own copy, which is usually
   // older than the one in package.json and can fail to resolve "extends"

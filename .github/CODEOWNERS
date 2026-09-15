@@ -7,7 +7,7 @@
 # Later patterns win over earlier ones, so put the broad rule first.
 
 # Default owners for everything in the repo.
-*                       @ecjonson
+*                       @ecjonson @bunnybusatsu @AaronFulmer
 
 # Deploy config and CI: CTO reviews these regardless of who else is on the PR.
 /wrangler.jsonc         @ecjonson
@@ -15,4 +15,4 @@
 /package.json           @ecjonson
 
 # Copy and content changes: route to whoever owns messaging.
-/src/config.ts          @ecjonson
+/src/config.ts          @ecjonson @bunnybusatsu @AaronFulmer
