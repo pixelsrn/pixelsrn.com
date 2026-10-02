@@ -5,10 +5,17 @@
 # Default owners for everything in the repo.
 *                       @ecjonson @bunnybusatsu @AaronFulmer
 
-# Deploy config and CI: CTO reviews these regardless of who else is on the PR.
+# Build, deploy, and tooling config.
 /wrangler.jsonc         @ecjonson
+/astro.config.mjs       @ecjonson
+/tsconfig.json          @ecjonson
+/.nvmrc                 @ecjonson
 /.github/               @ecjonson
 /.vscode/               @ecjonson
+/.gitignore             @ecjonson
+/.gitattributes         @ecjonson
+/.prettierrc.mjs        @ecjonson
+/.prettierignore        @ecjonson
 
 # No owners: dependency version bumps don't require a review
 /package.json
