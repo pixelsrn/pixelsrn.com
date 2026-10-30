@@ -1,7 +1,7 @@
 # pixelsrn.com
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fpixelsrn.com&label=pixelsrn.com)](https://pixelsrn.com)
 [![CI](https://github.com/PixelsRN/pixelsrn.com/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/PixelsRN/pixelsrn.com/actions/workflows/ci.yml)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fpixelsrn.com&label=pixelsrn.com)](https://pixelsrn.com)
 [![Node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FPixelsRN%2Fpixelsrn.com%2Fmain%2Fpackage.json&query=%24.devEngines.runtime.version&label=node&color=339933)](.nvmrc)
 [![License: proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](LICENSE)
 
@@ -21,4 +21,4 @@ pick a template:
 - **Bug report**: something is broken, looks wrong, or behaves oddly.
 - **Content change**: a wording, link, name, or publication update.
 
-For security issues, please don't open a _public_ issue. See [SECURITY.md](SECURITY.md).
+For security issues, please don't open a public issue. See [SECURITY.md](SECURITY.md).
