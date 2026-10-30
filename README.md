@@ -1,8 +1,7 @@
 # pixelsrn.com
 
 [![CI](https://github.com/PixelsRN/pixelsrn.com/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/PixelsRN/pixelsrn.com/actions/workflows/ci.yml)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fpixelsrn.com&label=pixelsrn.com)](https://pixelsrn.com)
-[![Node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FPixelsRN%2Fpixelsrn.com%2Fmain%2Fpackage.json&query=%24.devEngines.runtime.version&label=node&color=339933)](.nvmrc)
+[![Node 24](https://img.shields.io/badge/node-24-339933)](.nvmrc)
 [![License: proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](LICENSE)
 
 <img src="public/favicon.svg" alt="pixelsrn icon" width="100">
