@@ -1,0 +1,48 @@
+name: Content change
+description: Update wording, links, names, team details, or publications.
+title: "[Content]: "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most content lives in `src/config.ts`. If you're comfortable with GitHub,
+        you can edit that file directly and open a PR instead. See CONTRIBUTING.md.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What needs changing?
+      options:
+        - Company details (name, location, contact email)
+        - Navigation links
+        - Team member (name, title, profile links)
+        - Publications
+        - Headline or intro text
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text or link
+      description: Copy what's there now, if anything.
+    validations:
+      required: false
+
+  - type: textarea
+    id: new
+    attributes:
+      label: New text or link
+      description: Exactly what it should say. For publications, include title, authors, venue, year, and a link.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Deadline, who approved it, context, etc.
+    validations:
+      required: false

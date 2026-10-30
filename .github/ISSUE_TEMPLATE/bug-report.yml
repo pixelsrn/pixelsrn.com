@@ -1,0 +1,66 @@
+name: Bug report
+description: Something on the site is broken, looks wrong, or behaves oddly.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A screenshot is often the fastest way to show the problem.
+        For security issues, please use the private vulnerability report instead.
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Where did you see it? Use the preview URL if it's on a PR.
+      placeholder: https://pixelsrn.com/
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the page on a phone
+        2. Scroll to ...
+        3. Tap ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      multiple: true
+      options:
+        - Desktop
+        - Phone
+        - Tablet
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: e.g. Safari 19 on iOS, Chrome 141 on Windows
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here.
+    validations:
+      required: false
