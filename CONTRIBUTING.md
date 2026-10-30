@@ -32,13 +32,12 @@ Prettier, and Tailwind.
 
 ## Making a Change
 
-`main` is protected, so changes reach them only through pull
-requests.
+The `main` branch is protected, changes reach it only through pull requests.
 
 1. Branch off `main` with a `feat/`, `fix/`, or `chore/` prefix,
    e.g. `fix/mobile-contact-bar`.
 2. Commit and push.
-3. Open a PR. CI runs format, typecheck, and build. Cloudflare comments with a
+3. Open a PR. CI runs, Cloudflare comments with a
    preview URL.
 4. Merge to `main`. Cloudflare deploys production automatically.
 
